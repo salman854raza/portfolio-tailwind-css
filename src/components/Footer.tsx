@@ -1,19 +1,11 @@
-import React from 'react';
-import './footer.css';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <p className="footer-text">&copy; {new Date().getFullYear()} Salman Raza. All rights reserved.</p>
-      <div className="footer-links">
-        <a href="#hero" className="footer-link">Home</a>
-        <a href="#about" className="footer-link">About</a>
-        <a href="#projects" className="footer-link">Projects</a>
-        <a href="#skills" className="footer-link">Skills</a>
-        <a href="#contact" className="footer-link">Contact</a>
-      </div>
+    <div className='mt-16 py-6 text-center bg-accent'>
+      @ Salman | All rights reserved 2024.
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

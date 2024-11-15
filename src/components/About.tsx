@@ -1,22 +1,16 @@
-import React from 'react';
-import './about.css';
+import React from 'react'
 
 const About = () => {
   return (
-    <div className="about-container" id="about">
-      <h2 className="about-title">About Me</h2>
-      <div className="about-content">
-        <p>
-          Hello! I'm Salman Raza, a passionate web developer with experience in building dynamic
-          and responsive web applications. My expertise includes JavaScript, TypeScript, React, Next.js, and more.
+    <div id='about' className='container pt-32'>
+        <h2 className='text-4xl md:text-5xl' data-aos="zoom-in-up">About Me</h2>
+        <p className='text-gray-500 pt-4' data-aos="zoom-in-up">
+            I am a student at GIAIC, persuing a course in Artificial Intelligence, Web 3.0, & Metaverse. 
+            Passionate about technology and constantly learning new skills to stay up to date with the latest innovations.
         </p>
-        <p>
-          I enjoy learning new technologies and constantly improving my skills to keep up with the evolving
-          tech industry. I am enthusiastic about building efficient, scalable, and user-friendly applications.
-        </p>
-      </div>
+      
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

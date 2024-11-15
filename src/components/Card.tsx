@@ -1,6 +1,5 @@
-import React from 'react';
+import React from 'react'
 import Image from 'next/image';
-import './Card.css';
 
 interface propsType {
     title: string;
@@ -9,31 +8,31 @@ interface propsType {
     tags: string[];
 }
 
-const Card: React.FC<propsType> = ({ title, desc, img, tags }) => {
+const Card:React.FC<propsType> = ({ title, desc, img, tags}) => {
   return (
-    <div className="card-container" data-aos="zoom-in-up">
-      <div>
-        <Image
-          className="card-image"
-          src={img}
-          width={350}
-          height={350}
-          alt={title}
+    <div className='border border-accent w-[300px] sm:w-[350px]' data-aos="zoom-in-up" >
+      <div >
+        <Image className='w-[300px] sm:w-[350px] h-auto'
+        src={img}
+        width={350}
+        height={350}
+        alt={title}
         />
       </div>
-      <div className="card-content">
-        <div className="card-title">{title}</div>
-        <div className="card-desc">{desc}</div>
-        <div className="card-tags">
-          {tags.map((tag) => (
-            <div className="tag" key={tag}>
-              {tag}
+
+      <div className='p-8 space-y-4'></div>
+      <div className='text-3xl font-extralight'>{title}</div>
+      <div>{desc}</div>
+      <div>
+        {tags.map((el) => (
+            <div className='tags' key={el}>
+                {el}
+
             </div>
-          ))}
-        </div>
+            ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
