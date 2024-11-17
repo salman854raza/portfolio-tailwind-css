@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 const Skills = () => {
   return (
@@ -8,7 +8,7 @@ const Skills = () => {
           <h2 className='text-4xl md:text-5xl'>Technologies I work with</h2>
           <p className='text-gray-500 pt-2'>
             I have a solid foundation in web development, specializing in HTML,CSS, and Javascript. My experience extends to
-            using frameworks like React and Next.js to create dynamic and user-friendly applications. I'm also proficient in
+            using frameworks like React and Next.js to create dynamic and user-friendly applications. I&#39;m also proficient in
             Tailwind CSS for efficient styling and design. With a passion for learning, I stay updated on the latest technologies
             to enhance my skill set and contribute effectively to projects.
             </p>
