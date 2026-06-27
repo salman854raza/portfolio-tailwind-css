@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="container grid lg:grid-cols-2 h-[calc(100vh-60px)]">
         <div className="flex justify-center items-center">
           <Image
-            src="/salman.jpeg" 
+            src="/salman-profile.png" 
             alt="Salman Raza" 
             className="rounded-full w-[250px] h-[250px] object-cover border-4 border-white shadow-lg"
             style={{ backgroundSize: "cover", backgroundPosition: "center" }} 
