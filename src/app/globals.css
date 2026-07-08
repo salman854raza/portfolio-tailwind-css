@@ -1,18 +1,37 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #08E95E;
+  --color-accent-dark: #06c44e;
+  --color-bg: #000000;
+  --color-surface: #0d0d0d;
+  --color-surface-2: #141414;
+}
 
 @layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
     color: #fff;
     background-color: #000;
+    overflow-x: hidden;
   }
+  ::selection { background: #08E95E; color: #000; }
 }
 
 @layer components {
   .menuLink {
-    @apply cursor-pointer hover:text-[#c5c5c5];
+    @apply cursor-pointer transition-colors duration-200 hover:text-[#c5c5c5] relative;
   }
+  .menuLink::after {
+    content: "";
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 2px;
+    background: #08E95E;
+    transition: width 0.3s ease;
+  }
+  .menuLink:hover::after { width: 100%; }
 
   .tags {
     background-color: #0abde3;
@@ -23,24 +42,20 @@
     display: inline-block;
     color: #fff;
     font-size: 12px;
+    border-radius: 4px;
   }
-  .tags:last-child{
-    margin-right: 2px;
-    margin-left: 1px;
+  .tags:last-child { margin-right: 2px; margin-left: 1px; }
+  .tags:nth-child(1) { margin-left: 28px; }
+  .tags:nth-child(2) { background-color: #a55eea; }
+  .tags:nth-child(3) { background-color: #db9f10; }
+  .tags:nth-child(4) { background-color: #eb4d4b; margin-right: 0; margin-left: 1px; }
 
-  }
-  .tags:nth-child(1){
-    margin-left: 28px;
-  }
-  .tags:nth-child(2) {
-    background-color: #a55eea;
-  }
-  .tags:nth-child(3) {
-    background-color: #db9f10;
-  }
-  .tags:nth-child(4) {
-    background-color: #eb4d4b;
-    margin-right: 0;
-    margin-left: 1px
+  .glow-accent { box-shadow: 0 0 20px rgba(8,233,94,0.3), 0 0 60px rgba(8,233,94,0.1); }
+  .glow-accent-sm { box-shadow: 0 0 10px rgba(8,233,94,0.2); }
+  .glass {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.06);
   }
 }
