@@ -1,14 +1,15 @@
-# Salman's Portfolio
+# Salman Raza — Portfolio
 
-A personal developer portfolio built with **Next.js** and **Tailwind CSS**.
+AI-focused Full-Stack Developer portfolio. Built with Next.js, Tailwind CSS, and Framer Motion.
 
 ## Tech Stack
 
-- **Framework:** Next.js 14 (upgrading to 15)
-- **Styling:** Tailwind CSS 3 (upgrading to 4)
-- **Animations:** AOS (migrating to Framer Motion)
+- **Framework:** Next.js 15 (App Router)
+- **Styling:** Tailwind CSS 4
+- **Animation:** Framer Motion
+- **3D:** React Three Fiber / Three.js
 - **Language:** TypeScript
-- **Icons:** react-icons
+- **Deployed on:** Vercel
 
 ## Project Structure
 
@@ -16,6 +17,7 @@ A personal developer portfolio built with **Next.js** and **Tailwind CSS**.
 src/
   app/            # App router pages, layout, global styles
   components/     # Hero, About, Projects, Skills, Contact, Navbar, Footer, Card, Heading
+  components/3d/  # WebGL / Three.js scene components
 ```
 
 ## Getting Started
@@ -27,15 +29,21 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to view it locally.
 
-## 🚧 Upgrade Roadmap (in progress)
+## 🚀 v2 Redesign — Professional / Recruiter-Facing Upgrade (in progress)
 
-- [x] Clean up repo (stop tracking `.next/` build output)
-- [x] Refresh README
-- [ ] Upgrade to Next.js 15 + React 19
-- [ ] Upgrade to Tailwind CSS 4
-- [ ] Replace AOS with Framer Motion for smoother animations
-- [ ] Add 3D-style interactions (tilt cards, parallax, depth transitions)
+Goal: make the portfolio genuinely interactive and hiring-ready for companies evaluating an AI-focused developer profile.
+
+- [x] Next.js 15 + React 19 + Tailwind CSS 4 migration
+- [x] Framer Motion animations across all sections
+- [x] 13 live projects with clickable links
+- [ ] Refined design system (deepened palette, Geist Mono "engineer" accents)
+- [ ] Interactive 3D neural-network hero (React Three Fiber)
+- [ ] ⌘K command palette navigation
+- [ ] Case-study style project detail views
+- [ ] Interactive skills visualization
+- [ ] Downloadable resume (Canva-generated PDF)
+- [ ] Recruiter quick-stat bar (availability, stack, resume, contact)
 
 ## Deployment
 
-Deployed easily via [Vercel](https://vercel.com/new).
+Deployed via [Vercel](https://vercel.com/new) — auto-deploys on push to `main`.
